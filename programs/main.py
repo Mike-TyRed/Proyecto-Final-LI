@@ -60,6 +60,19 @@ def menu():
         elif menu == 8:
 
             return
+
+# METODO PREGUNTA SENCILLA FIRMACuestionario8.	Cadenas
+def PreguntaSencillaFirma():
+    return
+
+# METODO CUESTIONARIO
+def Cuestionario():
+    return
+
+# METODO CADENAS
+def Cadenas():
+    return
+
 #----------------------------- LLAMADAS ------------------------
 
 acceso()
