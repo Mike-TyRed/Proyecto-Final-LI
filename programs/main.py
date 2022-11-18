@@ -1,9 +1,6 @@
 #-------------------------- IMPORTACIONES -----------------------
-import os
-import sys
 import getpass
-from numpy import array
-from numpy import* 
+from os import system
 #--------------------------- ASIGNACIONES -----------------------
 v_password = ( '123' , 'hola' , 'Soy1humano?')
 v_user = ('moy' , 'aranza' , 'miguel')
@@ -12,11 +9,11 @@ v_user = ('moy' , 'aranza' , 'miguel')
 def acceso():
     
     while True:
-        os.system ("clear")#LIMPIAR PANTALLA
+        system ("cls")#LIMPIAR PANTALLA
         print("\n\tInicio de secion")
         user = str(input("\n\t\tUsuario: "))
         if user in v_user :
-            password = getpass.getpass("\n\tContraseña: ")
+            password = getpass.getpass("\n\t\tContraseña: ")
             if password in v_password :
                 print(f"\n\tBienvenido usuario {user} ...")
                 break
@@ -25,7 +22,44 @@ def acceso():
         else:
             input("\n\tUsuario incorrecto.\n\tEnter para continuar...")
     input("\n\tEnter para continuar...")
+    menu()
 
 # METODO DE MENU
 def menu():
-    
+    while True:
+        system ("cls")#LIMPIAR PANTALLAm
+        menu = int(input("\n\t< MENU >\n\n\t1. Programa Menú.\n\t2. Programa de comparación lógica utilizando variables.\n\t3. Operaciones matemáticas.\n\t4. Sistema de unidades.\n\t5. Impresión de un Cuadrado.\n\t6. Pregunta sencilla con firma.\n\t7. Cuestionario.\n\t8.Cadenas."))
+        if menu == 1:
+
+            return 
+
+        elif menu == 2:
+
+            return
+        
+        elif menu == 3:
+
+            return
+
+        elif menu == 4:
+
+            return
+
+        elif menu == 5:
+
+            return
+
+        elif menu == 6:
+
+            return
+
+        elif menu == 7:
+
+            return
+
+        elif menu == 8:
+
+            return
+#----------------------------- LLAMADAS ------------------------
+
+acceso()
