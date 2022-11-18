@@ -51,15 +51,15 @@ def menu():
 
         elif menu == 6:
 
-            return
+            return PreguntaSencillaFirma()
 
         elif menu == 7:
 
-            return
+            return Cuestionario()
 
         elif menu == 8:
 
-            return
+            return Cadenas()
 
 # METODO PREGUNTA SENCILLA FIRMACuestionario8.	Cadenas
 def PreguntaSencillaFirma():
