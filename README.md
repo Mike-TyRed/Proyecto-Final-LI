@@ -2,5 +2,5 @@
 
 Desarrolladores:
 - Gutierrez Mora Aranza
-- Miguel Arturo
+- Terrazas Miguel
 - Sandoval Moises
