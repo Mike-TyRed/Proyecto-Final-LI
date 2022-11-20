@@ -1,12 +1,12 @@
 # Proyecto-Final-LI
 
-##Desarrolladores:
+## Desarrolladores:
 
 - Gutierrez Mora Aranza
 - Terrazas Miguel
 - Sandoval Moises
 
-##Prácticas:
+## Prácticas:
 
 - 1.- Portada ITT ✅
 - 2.- Cadenas

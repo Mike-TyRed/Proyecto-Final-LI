@@ -28,10 +28,10 @@ def acceso():
 def menu():
     while True:
         system ("cls")#LIMPIAR PANTALLAm
-        menu = int(input("\n\t< MENU >\n\n\t1. Programa Menú.\n\t2. Programa de comparación lógica utilizando variables.\n\t3. Operaciones matemáticas.\n\t4. Sistema de unidades.\n\t5. Impresión de un Cuadrado.\n\t6. Pregunta sencilla con firma.\n\t7. Cuestionario.\n\t8.Cadenas."))
+        menu = int(input("\n\t< MENU >\n\n\t1. Portada ITT.\n\t2. Programa de comparación lógica utilizando variables.\n\t3. Operaciones matemáticas.\n\t4. Sistema de unidades.\n\t5. Impresión de un Cuadrado.\n\t6. Pregunta sencilla con firma.\n\t7. Cuestionario.\n\t8.Cadenas. \n\t9. Dibujar cuadrado. \n\t10. Sistema de unidades. \n\t11. Salir..."))
         if menu == 1:
 
-            return 
+            return PortadaITT()
 
         elif menu == 2:
 
@@ -61,6 +61,17 @@ def menu():
 
             return Cadenas()
 
+        elif menu == 9:
+
+            return Cuadrado()
+
+        elif menu == 10:
+                
+            return SistemaUnidades()
+
+        elif menu == 11:
+            break
+
 # METODO PREGUNTA SENCILLA FIRMACuestionario8.	Cadenas
 def PreguntaSencillaFirma():
     return
@@ -73,6 +84,66 @@ def Cuestionario():
 def Cadenas():
     return
 
-#----------------------------- LLAMADAS ------------------------
+# METODO PORTADA ITT
+def PortadaITT():
+    system ("cls")
+    print("""
+                   TECNOLOGICO NACIONAL DE MEXICO
+                  INSTITUTO TECNOLOGICO DE TIJUANA
+                      SUBDIRECCION ACADEMICA
+               DEPARTAMENTO DE SISTEMAS Y COMPUTACION
+               INGENIERIA EN SISTEMAS COMPUTACIONALES
+               
+                    AGOSTO - DICIEMBRE 2022
+                    
+                            MAESTRO
+                     CAÑEZ VALLE RODRIGO
+                     
+                            MATERIA
+                     LENGUAJE DE INTERFAZ
+                     
+                            ALUMNO(S)
+                      GUTIERREZ MORA ARANZA
+                    SANDOVAL VALTIERRA MOISES
+                   TERRAZAS ROJO MIGUEL ARTURO""")
+    input("\n\tEnter para continuar...")
+    menu()
 
+def Cuadrado():
+    system ("cls")
+    print("""    -------------------------------------
+    |                                   |
+    |                                   |
+    |                                   |
+    |                                   |
+    |                                   |
+    |                                   |
+    |                                   |
+    |                                   |
+    |                                   |
+    |                                   |
+    |                                   |
+    |                                   |
+    |                                   |
+    |                                   |
+    |                                   |
+    -------------------------------------""")
+    input("\n\tEnter para continuar...")
+    menu()
+
+# METODO SISTEMA DE UNIDADES
+def SistemaUnidades():
+    system ("cls")
+    x = int(input("Ingresa un número: "))
+    print("\n\tUnidades: " + str(x * 1))
+    print("Decenas: " + str(x * 10))
+    print("Centenas: " + str(x * 100))
+    print("Millares: " + str(x * 1000))
+    print("Decenas de millar: " + str(x * 10000))
+    print("Centenas de millar: " + str(x * 100000))
+    print("Millones: " + str(x * 1000000))
+    input("\n\tEnter para continuar...")
+    menu()
+
+#----------------------------- LLAMADAS ------------------------
 acceso()
