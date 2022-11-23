@@ -27,7 +27,7 @@ def acceso():
 # METODO DE MENU
 def menu():
     while True:
-        system ("cls")#LIMPIAR PANTALLAm
+        system ("cls")#LIMPIAR PANTALLA
         menu = int(input("\n\t< MENU >\n\n\t1. Portada ITT.\n\t2. Programa de comparación lógica utilizando variables.\n\t3. Operaciones matemáticas.\n\t4. Sistema de unidades.\n\t5. Impresión de un Cuadrado.\n\t6. Pregunta sencilla con firma.\n\t7. Cuestionario.\n\t8.Cadenas. \n\t9. Dibujar cuadrado. \n\t10. Sistema de unidades. \n\t11. Salir..."))
         if menu == 1:
 
@@ -74,7 +74,10 @@ def menu():
 
 # METODO PREGUNTA SENCILLA FIRMACuestionario8.	Cadenas
 def PreguntaSencillaFirma():
-    return
+    system("cls")#LIMPIAR PANTALLA
+    ps = input("\n\tPregunta sencilla.\n\n\tCual es tu nombre? ")
+    input(f"\n\tTu nombre es: {ps}\n\tEnter para continuar.")
+    menu()
 
 # METODO CUESTIONARIO
 def Cuestionario():
