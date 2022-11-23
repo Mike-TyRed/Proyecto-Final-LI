@@ -28,30 +28,42 @@ def acceso():
 def menu():
     while True:
         system ("cls")#LIMPIAR PANTALLA
-        menu = int(input("\n\t< MENU >\n\n\t1. Portada ITT.\n\t2. Programa de comparación lógica utilizando variables.\n\t3. Operaciones matemáticas.\n\t4. Sistema de unidades.\n\t5. Impresión de un Cuadrado.\n\t6. Pregunta sencilla con firma.\n\t7. Cuestionario.\n\t8.Cadenas. \n\t9. Dibujar cuadrado. \n\t10. Sistema de unidades. \n\t11. Salir..."))
+        print("\n\t< MENU >")
+        print("\n\n\t1. Portada ITT.")
+        print("\n\t2. Cadenas.")
+        print("\n\t3. Cuestionario.")
+        print("\n\t4. Pregunta sencilla firma.")
+        print("\n\t5. Impresión de un Cuadrado.")
+        print("\n\t6. Pregunta sencilla con firma.")
+        print("\n\t7. .")
+        print("\n\t8.Cadenas. ")
+        print("\n\t9. Dibujar cuadrado. ")
+        print("\n\t10. Sistema de unidades.")
+        print("\n\t11. Salir...")
+        menu = int(input("\n\n\tOpcion: "))
         if menu == 1:
 
             return PortadaITT()
 
         elif menu == 2:
 
-            return
+            Cadenas()
         
         elif menu == 3:
 
-            return
+            Cuestionario()
 
         elif menu == 4:
 
-            return
+            return PreguntaSencillaFirma()
 
         elif menu == 5:
 
-            Cuestionario()
-
+            return
+            
         elif menu == 6:
 
-            return PreguntaSencillaFirma()
+            return 
 
         elif menu == 7:
 

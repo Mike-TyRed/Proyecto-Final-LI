@@ -9,7 +9,7 @@
 ## Prácticas:
 
 - 1.- Portada ITT ✅
-- 2.- Cadenas
+- 2.- Cadenas ✅
 - 3.- Cuestionario ✅
 - 4.- Pregunta sencilla con firma ✅
 - 5.- Impresión de boleta
