@@ -47,7 +47,7 @@ def menu():
 
         elif menu == 5:
 
-            return
+            Cuestionario()
 
         elif menu == 6:
 
@@ -81,7 +81,21 @@ def PreguntaSencillaFirma():
 
 # METODO CUESTIONARIO
 def Cuestionario():
-    return
+    system("cls")#LIMPIAR PANTALLA
+    print("\n\tCuestionario")
+    p1 = input("\n\tCual es tu nombre?")
+    p2 = input("\n\tCual es tu edad?")
+    p3 = input("\n\tCual es tu carrera?")
+    p4 = input("\n\tCual es tu ciudad de origen?")
+    p5 = input("\n\tCual es tu nacionalidad?")
+    p6 = input("\n\tCual es tu comida favorita?")
+    p7 = input("\n\tCual es tu canción favorita?")
+    p8 = input("\n\tCual es tu sexo?")
+    p9 = input("\n\tEres ingeniero?")
+    p10 = input("\n\tEres estudiante?")
+    print(f"\n\tTus respuestas fueron...    \n\n\tTu nombre es {p1}.    \n\tTu edad es {p2}.    \n\tTu carrera es {p3}.    \n\tTu ciudad de origen es {p4}.    \n\tTu nacionalidad es {p5}.    \n\tTu comida favorita es {p6}.    \n\tTu cancion favorita es {p7}.    \n\tTu sexo es {p8}.    \n\tTu {p9} eres un ingeniero.  \n\tTu {p10} eres un estudiante.")
+    input("\n\n\tEnter para continuar.")
+    menu()
 
 # METODO CADENAS
 def Cadenas():

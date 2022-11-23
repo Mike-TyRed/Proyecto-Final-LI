@@ -10,8 +10,8 @@
 
 - 1.- Portada ITT ✅
 - 2.- Cadenas
-- 3.- Cuestionario 
-- 4.- Pregunta sencilla con firma
+- 3.- Cuestionario ✅
+- 4.- Pregunta sencilla con firma ✅
 - 5.- Impresión de boleta
 - 6.- Impresión de un cuadrado ✅
 - 7.- Captura de 4 números
