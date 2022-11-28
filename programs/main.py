@@ -699,6 +699,7 @@ def ProyectoIntegrador():
             print("Opción incorrecta")
         print("")
         input("Presiona enter para continuar...")
+        menu()
 
 # 16.- Programa claves de acceso
 
