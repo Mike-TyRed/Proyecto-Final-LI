@@ -12,10 +12,10 @@ def acceso():
 
     while True:
         system("cls")  # LIMPIAR PANTALLA
-        print("\n\tInicio de secion")
+        print("\n\tInicio de sesion")
         user = str(input("\n\t\tUsuario: "))
+        password = getpass.getpass("\n\t\tContraseña: ")
         if user in v_user:
-            password = getpass.getpass("\n\t\tContraseña: ")
             if password in v_password:
                 print(f"\n\tBienvenido usuario {user} ...")
                 break
@@ -155,7 +155,7 @@ def PortadaITT():
                     SANDOVAL VALTIERRA MOISES
                    TERRAZAS ROJO MIGUEL ARTURO""")
     input("\n\tEnter para continuar...")
-    menu()
+    
 
 # 2.- Cadenas.
 
@@ -192,7 +192,7 @@ def Cuestionario():
     p10 = input("\n\tEres estudiante?")
     print(f"\n\tTus respuestas fueron...    \n\n\tTu nombre es {p1}.    \n\tTu edad es {p2}.    \n\tTu carrera es {p3}.    \n\tTu ciudad de origen es {p4}.    \n\tTu nacionalidad es {p5}.    \n\tTu comida favorita es {p6}.    \n\tTu cancion favorita es {p7}.    \n\tTu sexo es {p8}.    \n\tTu {p9} eres un ingeniero.  \n\tTu {p10} eres un estudiante.")
     input("\n\n\tEnter para continuar.")
-    menu()
+    
 
 # 4.- Pregunta sencilla con firma.
 
@@ -201,7 +201,7 @@ def PreguntaSencillaFirma():
     system("cls")  # LIMPIAR PANTALLA
     ps = input("\n\tPregunta sencilla.\n\n\tCual es tu nombre? ")
     input(f"\n\tTu nombre es: {ps}\n\tEnter para continuar.")
-    menu()
+    
 
 # 5.- Impresión de boleta.
 
@@ -290,7 +290,7 @@ def ImpresionCuadrado():
     -------------------------------------""")
     print("")
     input("Presiona enter para continuar...")
-    menu()
+    
 
 # 7.- CAPTURA 4 NUMEROS
 
@@ -309,7 +309,7 @@ def Captura4Numeros():
 
     print("")
     input("Presiona enter para continuar...")
-    menu()
+    
 
 # 8.- SISTEMA DE UNIDADES
 
@@ -327,7 +327,7 @@ def SistemaUnidades():
 
     print("")
     input("Presiona enter para continuar...")
-    menu()
+    
 
 # 9.- OPERACIONES MATEMATICAS
 
@@ -377,7 +377,7 @@ def OperacionesMatematicas():
 
     print("")
     input("Presiona enter para continuar...")
-    menu()
+    
 
 
 # 10.- OPERACIONES LOGICAS
@@ -398,8 +398,7 @@ def OperacionesLogicas():
 
     print("")
     input("Presiona enter para continuar...")
-    menu()
-
+    
 
 # 12.- EJECCION 28/09/22
 
@@ -474,9 +473,7 @@ def Ejercicios28():
 
     print("")
     input("Presiona enter para continuar...")
-    menu()
-
-    menu()
+    
 
 # 13.- CICLOS WHILE Y FOR
 
@@ -585,8 +582,7 @@ def Correccion17():
 
     print("")
     input("Presiona enter para continuar...")
-    menu()
-
+   
 # 14.- TABLA DE MULTIPLICAR
 
 
@@ -607,7 +603,6 @@ def TablasMultiplicar():
 
     print("")
     input("Presiona enter para continuar...")
-    menu()
 
 # 15.- Proyecto integrador de temas anteriores de python
 
@@ -622,15 +617,15 @@ def ProyectoIntegrador():
         system("cls")
         print("""
         =================Menu=================
-        |Calcular area y perimetro de: |
-        | 1 Cuadrado |
-        | 2 Rectangulo |
-        | 3 Triangulo |
-        |4. Contar letras de una cadena |
-        |5. Arreglo de 10 registros |
-        |6. Atinar un numero random |
+        |Calcular area y perimetro de:       |
+        |1. Cuadrado                         |
+        |2. Rectangulo                       |
+        |3. Triangulo                        |
+        |4. Contar letras de una cadena      |
+        |5. Arreglo de 10 registros          |
+        |6. Atinar un numero random          |
         |7. Imprimir una lista de 5 registros|
-        |8. Salir |
+        |8. Salir                            |
         =====================================""")
         opcion = input("¿Qué opción deseas? ")
         if opcion == "8":
@@ -699,7 +694,6 @@ def ProyectoIntegrador():
             print("Opción incorrecta")
         print("")
         input("Presiona enter para continuar...")
-        menu()
 
 # 16.- Programa claves de acceso
 
@@ -725,7 +719,6 @@ def ClaveAcceso():
 
     print("")
     input("Presiona enter para continuar...")
-    menu()
 
 # 17.- Programa de calculadora
 
@@ -747,7 +740,6 @@ def CodigoLimpieza():
 
     print("")
     input("Presiona enter para continuar...")
-    menu()
 
 # 18.- FUNCIONES
 
@@ -808,7 +800,6 @@ def Funciones():
 
     print("")
     input("Presiona enter para continuar...")
-    menu()
 
 
 # 19.- Tipos de triangulos
@@ -844,14 +835,13 @@ def TiposTriangulos():
     input("Presione enter para continuar...")
     system('cls')
 
-    def triangulo(ladoA, ladoB, ladoC):
-        if ladoA == ladoB & ladoB == ladoC:
-            print("todos los lados son iguales, es un Triangulo Equilatero.")
-
-        elif ladoA == ladoB & ladoA != ladoC | ladoA != ladoB & ladoA == ladoC | ladoB == ladoC & ladoA != ladoC:
-            print("solo dos lados son iguales, es un Triangulo Isóseles.")
-        else:
-            print("todos lo lados son distintos, es un Triangulo Escaleno.")
+    def triangulo(L1, L2, L3):
+        if (L1 == L2 and L1 == L3):
+            print("\n\tTriangulo equilatero")
+        elif ((L1 == L2 and L1 != L3) or (L1 != L2 and L1 == L3 ) or (L1 != L2 and L1 == L3 ) or (L1 != L3 and L2 == L3 )):
+            print("\n\tTriangulo isosceles")
+        elif ((L1 != L2 and L2 != L3) or (L1 != L3 and L2 != L3)):
+            print("\n\tTriangulo escaleno")
 
     ladoA = int(input("Ingresa un lado: "))
     ladoB = int(input("Ingresa otro lado: "))
@@ -861,7 +851,6 @@ def TiposTriangulos():
 
     print("")
     input("Presiona enter para continuar...")
-    menu()
 
 
 # ----------------------------- LLAMADAS ------------------------
